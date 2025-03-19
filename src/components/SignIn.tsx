@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Image from "next/image";
 
 const SignIn = () => {
   const router = useRouter();
@@ -55,13 +56,15 @@ const SignIn = () => {
   };
 
   return (
-    <section className="relative flex items-center justify-center min-h-screen py-10 bg-gray-900 sm:py-16 lg:py-24">
+    <section className="relative flex items-center justify-center min-h-screen py-10  sm:py-16 lg:py-24">
       <ToastContainer />
-      <div className="absolute inset-0">
-        <img
-          className="object-cover w-full h-full"
+      <div className="absolute inset-0 hidden md:block">
+        <Image
+          className="object-cover"
           src="/SignUp.jpg"
           alt="Sign In Background"
+          layout="fill"
+          priority
         />
       </div>
       <div className="absolute inset-0 bg-gray-900/20"></div>

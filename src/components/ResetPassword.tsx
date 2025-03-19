@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
@@ -49,9 +50,15 @@ const ResetPassword = () => {
   };
 
   return (
-    <section className="relative flex items-center justify-center min-h-screen py-10 bg-gray-900 sm:py-16 lg:py-24">
-      <div className="absolute inset-0">
-        <img className="object-cover w-full h-full" src="/SignUp.jpg" alt="" />
+    <section className="relative flex items-center justify-center min-h-screen py-10 sm:py-16 lg:py-24">
+      <div className="absolute inset-0 hidden md:block">
+        <Image
+          className="object-cover"
+          src="/SignUp.jpg"
+          alt="Sign In Background"
+          layout="fill"
+          priority
+        />
       </div>
       <div className="absolute inset-0 bg-gray-900/20"></div>
 

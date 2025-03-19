@@ -52,7 +52,7 @@ export default function RootLayout({
                   className="h-6 w-[2px] bg-gray-500"
                 />
                 <div className="flex flex-col">
-                  <h1 className="text-lg font-semibold leading-tight">
+                  <h1 className=" text-sm sm:text-lg font-semibold leading-tight">
                     You are Born to Succeed, because you are Designed to Succeed
                   </h1>
                   <p className="text-sm italic text-gray-300">

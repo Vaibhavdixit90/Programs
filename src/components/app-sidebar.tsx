@@ -27,8 +27,8 @@ import Image from "next/image";
 
 const data = {
   user: {
-    name: "shadcn",
-    email: "m@example.com",
+    name: "Vaibhav dixit",
+    email: "Vaibhav.d@flowautomate.com",
     avatar: "https://github.com/shadcn.png",
   },
   navMain: [
